@@ -15,7 +15,7 @@ from langchain_classic.chains.combine_documents import create_stuff_documents_ch
 
 load_dotenv()
 
-# ------------------ PAGE CONFIG ------------------
+
 
 st.set_page_config(
     page_title="PDF RAG Chatbot",
@@ -23,7 +23,6 @@ st.set_page_config(
     layout="wide"
 )
 
-# ------------------ CSS ------------------
 
 st.markdown("""
 <style>
@@ -55,7 +54,7 @@ st.markdown("""
 # ------------------ HEADER ------------------
 
 st.markdown(
-    "<div class='title'>📄 PDF RAG Chatbot</div>",
+    "<div class='title'> PDF RAG Chatbot</div>",
     unsafe_allow_html=True
 )
 
@@ -64,7 +63,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-# ------------------ SESSION STATE ------------------
+
 
 if "messages" not in st.session_state:
     st.session_state.messages = []
@@ -75,7 +74,6 @@ if "rag_chain" not in st.session_state:
 if "pdf_name" not in st.session_state:
     st.session_state.pdf_name = None
 
-# ------------------ SIDEBAR ------------------
 
 with st.sidebar:
 
@@ -112,7 +110,7 @@ with st.sidebar:
 
     st.header("📚 Source Chunks")
 
-# ------------------ BUILD RAG ------------------
+
 
 if pdf is not None:
 
@@ -203,14 +201,13 @@ Context:
 
         st.success("✅ PDF processed successfully!")
 
-# ------------------ CHAT HISTORY ------------------
 
 for message in st.session_state.messages:
 
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-# ------------------ CHAT INPUT ------------------
+
 
 question = st.chat_input(
     "Ask anything about your PDF..."
