@@ -102,4 +102,4 @@ while True:
     )
 
     print("\nAI :", response["answer"])
-    print("-" * 60)
+    print("-" * 65)
