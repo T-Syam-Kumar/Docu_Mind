@@ -156,17 +156,6 @@ AI : The document primarily discusses ...
 
 ---
 
-## 📸 Screenshots
-
-Add screenshots of:
-
-* Home Page
-* PDF Upload
-* Question Answering Interface
-* Source Retrieval Results
-
----
-
 ## 🔮 Future Improvements
 
 * Conversation memory
