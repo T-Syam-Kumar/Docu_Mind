@@ -6,3 +6,4 @@ sentence-transformers
 pypdf
 python-dotenv
 torchvision
+langchain_huggingface
