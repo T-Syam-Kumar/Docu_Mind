@@ -59,7 +59,7 @@ st.markdown(
 )
 
 st.markdown(
-    "<div class='subtitle'>Powered by Gemini + LangChain + FAISS</div>",
+    "<div class='subtitle'>Made using Gemini + LangChain + FAISS</div>",
     unsafe_allow_html=True
 )
 
