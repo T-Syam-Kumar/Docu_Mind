@@ -1,11 +1,11 @@
-# 📄 DocuMind – PDF RAG Chatbot
+#  DocuMind – PDF RAG Chatbot
 
 An intelligent **Retrieval-Augmented Generation (RAG)** chatbot that allows users to upload PDF documents and ask natural language questions about their content.
 
 Built using **Google Gemini, LangChain, FAISS, HuggingFace Embeddings, and Streamlit**, DocuMind retrieves relevant document chunks and generates accurate answers grounded in the uploaded PDF.
 
 ---
-## 🌐 Live Demo
+##  Live Demo
 
 Try the application online without any installation:
 
@@ -13,7 +13,7 @@ Try the application online without any installation:
 
 ---
 
-## 🔗 Connect With Me
+##  Connect With Me
 
 * GitHub: https://github.com/t-syam-kumar
 * LinkedIn: https://www.linkedin.com/in/syam-kumar-t-a72508280
@@ -23,22 +23,22 @@ Try the application online without any installation:
 ---
 
 
-## 🚀 Features
+##  Features
 
-* 📂 Upload any PDF document
-* 💬 Ask questions in natural language
-* 🧠 Retrieval-Augmented Generation (RAG)
-* 🔍 Semantic search using vector embeddings
-* ⚡ Fast document retrieval with FAISS
-* 🤖 Powered by Gemini 2.5 Flash
-* 🎛 Adjustable Top-K retrieval results
-* 🌡 Configurable model temperature
-* 🗑 Clear chat functionality
-* 🎨 Modern and responsive Streamlit UI
+*  Upload any PDF document
+*  Ask questions in natural language
+*  Retrieval-Augmented Generation (RAG)
+*  Semantic search using vector embeddings
+*  Fast document retrieval with FAISS
+*  Powered by Gemini 2.5 Flash
+*  Adjustable Top-K retrieval results
+*  Configurable model temperature
+*  Clear chat functionality
+*  Modern and responsive Streamlit UI
 
 ---
 
-## 🏗 Architecture
+##  Architecture
 
 ```text
 PDF Upload
@@ -60,7 +60,7 @@ Answer Generation
 
 ---
 
-## 🛠 Tech Stack
+##  Tech Stack
 
 ### Frontend
 
@@ -88,7 +88,7 @@ Answer Generation
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 DocuMind/
@@ -106,7 +106,7 @@ DocuMind/
 
 ---
 
-## ⚙ Installation
+##  Installation
 
 ### 1. Clone the repository
 
@@ -157,7 +157,7 @@ streamlit run app.py
 
 ---
 
-## 💻 Running the CLI Version
+##  Running the CLI Version
 
 ```bash
 python cli_chatbot.py
@@ -173,7 +173,7 @@ AI : The document primarily discusses ...
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 * Conversation memory
 * Multi-PDF support
@@ -187,13 +187,13 @@ AI : The document primarily discusses ...
 
 ---
 
-## 🌟 Why DocuMind?
+##  Why DocuMind?
 
 Traditional chatbots hallucinate information. DocuMind solves this problem by retrieving relevant information directly from the uploaded document before generating answers, ensuring responses remain grounded in the source material.
 
 ---
 
-## 📊 Use Cases
+##  Use Cases
 
 * Research papers
 * Academic notes
@@ -206,7 +206,7 @@ Traditional chatbots hallucinate information. DocuMind solves this problem by re
 
 ---
 
-## 👨‍💻 Author
+##  Author
 
 **Syam Kumar**
 
@@ -216,7 +216,7 @@ Passionate about Artificial Intelligence, NLP, RAG Systems, and Building Product
 
 ---
 
-## ⭐ Support
+##  Support
 
 If you found this project useful, consider giving it a **star** on GitHub and sharing it with others.
 
