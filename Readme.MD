@@ -15,7 +15,6 @@ Try the application online without any installation:
 
 ##  Connect With Me
 
-* GitHub: https://github.com/t-syam-kumar
 * LinkedIn: https://www.linkedin.com/in/syam-kumar-t-a72508280
 * LeetCode: https://leetcode.com/u/TSyamKumar/
 * GeeksforGeeks: https://www.geeksforgeeks.org/user/23a31a42j0/
