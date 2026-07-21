@@ -13,7 +13,31 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_classic.chains import create_retrieval_chain
 from langchain_classic.chains.combine_documents import create_stuff_documents_chain
 
-load_dotenv()
+GOOGLE_API_KEY = (
+    st.secrets.get("GOOGLE_API_KEY")
+    if "GOOGLE_API_KEY" in st.secrets
+    else os.getenv("GOOGLE_API_KEY")
+)
+
+@st.cache_resource
+def get_embeddings():
+    return HuggingFaceEmbeddings(
+        model_name="sentence-transformers/all-MiniLM-L6-v2"
+    )
+
+@st.cache_resource
+def get_llm(api_key):
+    return ChatGoogleGenerativeAI(
+        model="gemini-2.5-flash",
+        temperature=0,
+        api_key=api_key
+    )
+
+if not GOOGLE_API_KEY:
+    st.error(
+        "Google API Key not found. Set GOOGLE_API_KEY in Streamlit Secrets or in your .env file."
+    )
+    st.stop()
 
 
 
@@ -140,9 +164,7 @@ if pdf is not None:
 
             docs = splitter.split_documents(documents)
 
-            embeddings = HuggingFaceEmbeddings(
-                model_name="sentence-transformers/all-MiniLM-L6-v2"
-            )
+            embeddings = get_embeddings()
 
             vector_db = FAISS.from_documents(
                 docs,
@@ -155,11 +177,7 @@ if pdf is not None:
                 }
             )
 
-            llm = ChatGoogleGenerativeAI(
-                model="gemini-2.5-flash",
-                temperature=temperature
-            )
-
+            llm = get_llm(GOOGLE_API_KEY)
             prompt = ChatPromptTemplate.from_messages(
                 [
                     (
