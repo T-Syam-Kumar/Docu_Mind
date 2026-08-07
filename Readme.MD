@@ -148,7 +148,7 @@ GOOGLE_API_KEY=your_gemini_api_key
 
 ---
 
-## ▶ Running the Streamlit App
+## Running the Streamlit App
 
 ```bash
 streamlit run app.py
