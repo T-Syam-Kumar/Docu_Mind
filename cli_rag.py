@@ -62,7 +62,7 @@ Answer the user's question ONLY from the provided context and remove if any extr
 If the answer is not found in the context,
 reply:
 
-"I couldn't find that information in the document."
+"I couldn't find that information in the document. Please ask only from the document"
 
 Context:
 {context}
