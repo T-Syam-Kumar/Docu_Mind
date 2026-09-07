@@ -2,9 +2,9 @@
 
 An intelligent **Retrieval-Augmented Generation (RAG)** chatbot that allows users to upload PDF documents and ask natural language questions about their content.
 
-Built using **Google Gemini, LangChain, FAISS, HuggingFace Embeddings, and Streamlit**, DocuMind retrieves relevant document chunks and generates accurate answers grounded in the uploaded PDF.
+Built using **Google Gemini, LangChain, FAISS, HuggingFace Embeddings, and Streamlit**, DocuMind retrieves relevant document chunks and generates accurate answers grounded in the uploaded PDF. Added Evaluation to the RAG using Ragas(Faithfulness, Context relevance) in the CLI version 
 
-Added Evaluation to the RAG using Ragas
+
 
 ---
 ##  Live Demo
