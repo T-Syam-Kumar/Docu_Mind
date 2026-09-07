@@ -4,6 +4,8 @@ An intelligent **Retrieval-Augmented Generation (RAG)** chatbot that allows user
 
 Built using **Google Gemini, LangChain, FAISS, HuggingFace Embeddings, and Streamlit**, DocuMind retrieves relevant document chunks and generates accurate answers grounded in the uploaded PDF.
 
+Added Evaluation to the RAG using Ragas
+
 ---
 ##  Live Demo
 
@@ -16,8 +18,6 @@ Try the application online without any installation:
 ##  Connect With Me
 
 * LinkedIn: https://www.linkedin.com/in/syam-kumar-t-a72508280
-* LeetCode: https://leetcode.com/u/TSyamKumar/
-* GeeksforGeeks: https://www.geeksforgeeks.org/user/23a31a42j0/
 
 ---
 
@@ -159,7 +159,7 @@ streamlit run app.py
 ##  Running the CLI Version
 
 ```bash
-python cli_chatbot.py
+python cli_rag.py
 ```
 
 Example:
